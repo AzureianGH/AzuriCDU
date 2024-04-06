@@ -7,7 +7,7 @@ namespace AzuriCDU
 {
     internal class Program
     {
-        public static string version = "0.1.0";
+        public static string version = "0.1.1";
         static void Main(string[] args)
         {
             //try opening AzureCDU in registry, if nonexistent, create it
@@ -76,11 +76,7 @@ namespace AzuriCDU
                 }
                 catch (System.Exception ex)
                 {
-                    //error
-                    HConsole.WriteLineColor(ex.Message, ConsoleColor.Red);
-                    //quit
-                    HConsole.ReadString("Press any key to exit...");
-                    return;
+                    //ignore
                 }
                 //check for updates
                 //Get this folder path of current exe
@@ -120,8 +116,7 @@ namespace AzuriCDU
                 //run install-VS2022.bat in the InstallCosmos\Cosmos folder
                 System.Diagnostics.Process.Start(Path.GetDirectoryName(path2Exe) + "\\CosmosInstall\\Cosmos\\Install-VS2022.bat");
                 //print done
-                HConsole.WriteLineColor("Done Installing!", ConsoleColor.Cyan);
-                HConsole.ReadString("Press any key to exit...");
+                HConsole.WriteLineColor("Starting Installer...", ConsoleColor.Cyan);
             }
         }
         public static class Git
