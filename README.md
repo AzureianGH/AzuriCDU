@@ -2,6 +2,8 @@
 # WARNING!!!!!!!!! ⚠️⚠️⚠️⚠️
 ## REQUIRES "AzureLIB.dll" TO WORK!!!!!
 https://github.com/AzureianGH/AzureLIB
+### Also Requires .NET 9.0 Preview 2.0
+https://dotnet.microsoft.com/en-us/download/dotnet/9.0
 
 ## Description
 AzuriCDU is a command-line tool for updating the Cosmos Devkit. It automates the process of fetching the latest versions of Cosmos components from their respective GitHub repositories.
